@@ -40,6 +40,7 @@ button{
     align-content: center;
     font-size:3vw;
     border-radius:20px;
+    margin:10px
 }
 
 .franchiseContainer{
@@ -49,6 +50,7 @@ button{
     align-content: center;
     font-size:1vw;
     border-radius:20px;
+    margin:10px
 }
 
 span{
@@ -59,4 +61,8 @@ span{
 
 img{
     height:100%;
+}
+
+p{
+    text-align: left;
 }
