@@ -1,0 +1,1 @@
+var usableList = nameList.split(")")
