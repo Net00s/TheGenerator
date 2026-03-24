@@ -1,5 +1,16 @@
 var nameList = `
 Netoo (This Website)
 Ebezimiz (This Website)
-etcwdhwidhd
+Spyro (Skylanders)
+Double Trouble (Skylanders)
+Wrecking Ball (Skylanders)
+Voodood (Skylanders)
+Trigger Happy (Skylanders)
+Drobot (Skylanders)
+Boomer (Skylanders)
+Drill Sergeant (Skylanders)
+Slam Bam (Skylanders)
+Gill Grunt (Skylanders)
+Wham Shell (Skylanders)
+Zap (Skylanders)
 `
