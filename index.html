@@ -6,9 +6,30 @@
         <link rel="stylesheet" href="Generator.css" />
     </head>
     <body>
-        <p id="Name">Name</p>
-        <p id="Franchise">Franchise</p>
-        <button onclick="Load()">Randomize</button>
+        <div class="container">
+            <div class="nameContainer">
+                <p id="Name">Name</p>
+            </div>
+            <div class="franchiseContainer">
+            <p id="Franchise">from: <span id="franchiseSpan">Franchise</span></p>
+            </div>
+            <div class="Image">
+            <img id="Image" src="Images/NoNameFound.png" alt="Placeholder">
+            </div>
+        </div>
+
+        <div class="center">
+            <button onclick="Load()">Randomize</button>
+        </div>
+
+
+
+
+
+
+
+
+
 
 
         <script src="ListLoader.js"></script>
@@ -17,6 +38,15 @@
 
             let nameP = document.getElementById("Name");
             let franchiseP = document.getElementById("Franchise")
+            let spanP = document.getElementById("franchiseSpan")
+
+
+            for (let i=0;i<usableList.length;i++){
+                if (usableList[i] == "\n"){
+                    usableList.splice(i,1);
+                }
+            }
+
 
 
 
@@ -26,7 +56,7 @@
                 console.log(chosenCharacter)
 
                 nameP.innerHTML = chosenCharacter[0];
-                franchiseP.innerHTML = chosenCharacter[1];
+                spanP.innerHTML = chosenCharacter[1];
             }
         </script>
     </body>
