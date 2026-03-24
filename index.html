@@ -39,6 +39,7 @@
             let nameP = document.getElementById("Name");
             let franchiseP = document.getElementById("Franchise")
             let spanP = document.getElementById("franchiseSpan")
+            let imageP = document.getElementById("Image")
 
 
             for (let i=0;i<usableList.length;i++){
@@ -52,12 +53,25 @@
 
             function Load(){
                 chosenCharacter = usableList[Math.floor(Math.random()*usableList.length)].split(" (");
+                chosenCharacter[0] = chosenCharacter[0].split("\n")[1]
 
                 console.log(chosenCharacter)
 
                 nameP.innerHTML = chosenCharacter[0];
                 spanP.innerHTML = chosenCharacter[1];
+
+                imageP.src = `Images/${chosenCharacter[0]}.png`
+
+                imageP.onerror = function(){
+                    imageP.src = "Images/NoNameFound.png"
+                }
+
+                
             }
+
+
+
+
         </script>
     </body>
 </html>
