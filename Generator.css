@@ -31,6 +31,7 @@ button{
     justify-self: right;
     padding-right: 50px;
     height:95%;
+    visibility: hidden;
 }
 
 .nameContainer{

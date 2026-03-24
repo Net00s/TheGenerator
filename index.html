@@ -60,11 +60,14 @@
                 nameP.innerHTML = chosenCharacter[0];
                 spanP.innerHTML = chosenCharacter[1];
 
+
                 imageP.src = `Images/${chosenCharacter[0]}.png`
 
                 imageP.onerror = function(){
                     imageP.src = "Images/NoNameFound.png"
                 }
+
+                imageP.style.visibility = "visible";
 
                 
             }
