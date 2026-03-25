@@ -11,16 +11,17 @@
                 <p id="Name">Name</p>
             </div>
             <div class="franchiseContainer">
-            <p id="Franchise">From: <span id="franchiseSpan">Franchise</span></p>
+                <p id="Franchise">From: <span id="franchiseSpan">Franchise</span></p>
             </div>
             <div class="Image">
-            <img id="Image" src="Images/NoNameFound.png" alt="Placeholder">
+                <img id="Image" src="Images/NoNameFound.png" alt="Placeholder">
+            </div>
+            <div class="center">
+                <button onclick="Load()">Randomize</button>
             </div>
         </div>
 
-        <div class="center">
-            <button onclick="Load()">Randomize</button>
-        </div>
+        
 
 
 
@@ -60,6 +61,8 @@
                 nameP.innerHTML = chosenCharacter[0];
                 spanP.innerHTML = chosenCharacter[1];
 
+
+                imageP.style.visibility = "hidden";
 
                 imageP.src = `Images/${chosenCharacter[0]}.png`
 
