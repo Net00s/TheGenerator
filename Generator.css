@@ -1,3 +1,9 @@
+body{
+    background-image: linear-gradient(to bottom, rgb(102, 101, 148), rgb(101, 101, 101));
+    height:100vh;
+    overflow-y: hidden;
+}
+
 .center{
     grid-area:button;
 }
