@@ -44,7 +44,7 @@
 
 
             for (let i=0;i<usableList.length;i++){
-                if (usableList[i] == "\n"){
+                if (usableList[i] == "\n" || usableList[i] == "\n(" || usableList[i] == "("){
                     usableList.splice(i,1);
                 }
             }
