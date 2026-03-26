@@ -1,7 +1,6 @@
 body{
-    background-image: linear-gradient(to bottom, rgb(102, 101, 148), rgb(101, 101, 101));
-    height:100vh;
-    overflow-y: hidden;
+    background-color: rgb(80, 80, 116);
+    
 }
 
 .center{
@@ -13,18 +12,41 @@ button{
     width:100%
 }
 
+#Slider{
+    grid-area:slider;
+    width:50px;
+    justify-self: center;
+}
+
 .container{
     grid-template-areas:
                 "name image"
                 "franchise image"
-                "button button";
+                "button button"
+                "slider slider";
     display:grid;
     align-items: center;
     height:250px;
     
 }
 
+.container2{
+    grid-template-areas:
+                "name image"
+                "franchise image";
+    display:grid;
+    align-items: center;
+    height:250px;
+    margin-bottom: 100px;
+    
+}
+
 #Name{
+    grid-area:name;
+    justify-self: center;
+}
+
+#Name2{
     grid-area:name;
     justify-self: center;
 }
@@ -34,7 +56,23 @@ button{
     justify-self: center;
 }
 
+#Franchise2{
+    grid-area:franchise;
+    justify-self: center;
+}
+
 .Image{
+    grid-area:image;
+    justify-self: right;
+    align-self:center;
+    padding-right: 50px;
+    visibility: visible;
+    margin:10px;
+    height:90%;
+    max-height:300px;
+}
+
+.Image2{
     grid-area:image;
     justify-self: right;
     align-self:center;

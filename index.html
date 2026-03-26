@@ -6,6 +6,23 @@
         <link rel="stylesheet" href="Generator.css" />
     </head>
     <body>
+        <div id="second">
+            <div class="container2">
+                <div class="nameContainer">
+                    <p id="Name2">Name</p>
+                </div>
+                <div class="franchiseContainer">
+                    <p id="Franchise2">From: <span id="franchiseSpan2">Franchise</span></p>
+                </div>
+                <div class="Image" id="imageContainer2">
+                    <img id="Image2" src="Images/NoNameFound.png" alt="Placeholder">
+                </div>
+            </div>
+        </div>
+
+        <div style="border-bottom:5px dotted black"> </div>
+
+        
         <div class="container">
             <div class="nameContainer">
                 <p id="Name">Name</p>
@@ -13,13 +30,16 @@
             <div class="franchiseContainer">
                 <p id="Franchise">From: <span id="franchiseSpan">Franchise</span></p>
             </div>
-            <div class="Image">
-                <img id="Image" src="Images/NoNameFound.png" alt="Placeholder">
-            </div>
+            <div class="Image" id="imageContainer">
+                <img id="Image" src="Images/NoNameFound.png" alt="Placeholder">                </div>
             <div class="center">
                 <button onclick="Load()">Randomize</button>
             </div>
+            <input type="number" id="Slider" value="1" min="1" max="2">
         </div>
+        
+
+        
 
 
         
@@ -42,6 +62,11 @@
             let franchiseP = document.getElementById("Franchise")
             let spanP = document.getElementById("franchiseSpan")
             let imageP = document.getElementById("Image")
+
+            let nameP2 = document.getElementById("Name2");
+            let franchiseP2 = document.getElementById("Franchise2")
+            let spanP2 = document.getElementById("franchiseSpan2")
+            let imageP2 = document.getElementById("Image2")
 
 
             for (let i=0;i<usableList.length;i++){
@@ -73,6 +98,40 @@
 
                 imageP.style.visibility = "visible";
                 imageP.alt = chosenCharacter[0];
+
+                //part 2
+
+                chosenCharacter2 = usableList[Math.floor(Math.random()*usableList.length)].split(" (");
+                chosenCharacter2[0] = chosenCharacter2[0].split("\n")[1]
+
+                console.log(chosenCharacter2)
+
+                nameP2.innerHTML = chosenCharacter2[0];
+                spanP2.innerHTML = chosenCharacter2[1];
+
+
+
+                imageP2.src = `Images/${chosenCharacter2[0]}.png`
+
+                imageP2.onerror = function(){
+                    imageP2.src = "Images/NoNameFound.png"
+                }
+
+                imageP2.alt = chosenCharacter[0];
+
+                //hide or show
+
+                if (document.getElementById("Slider").value == 1){
+                    document.getElementById("second").style.display = "none";
+                    imageP2.style.display = "none"
+                    document.getElementById("imageContainer2").style.display="none"
+
+                }
+                else{
+                    document.getElementById("second").style.display = "block";
+                    imageP2.style.display = "block"
+                    document.getElementById("imageContainer2").style.display="block"
+                }
 
                 
             }
