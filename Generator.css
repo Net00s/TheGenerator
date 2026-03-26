@@ -88,7 +88,7 @@ button{
     font-weight: bolder;
     height:90%;
     align-content: center;
-    font-size:3vw;
+    font-size:3rem;
     border-radius:20px;
     margin:10px;
     height:150px;
@@ -99,15 +99,26 @@ button{
     font-weight: normal;
     height:90%;
     align-content: center;
-    font-size:1vw;
+    font-size:1rem;
     border-radius:20px;
     margin:10px;
     height:150px;
 }
 
-span{
+
+
+#franchiseSpan{
+    grid-area:franchise;
+    justify-self: center;
     font-weight: bolder;
-    font-size:3vw;
+    font-size:3rem;
+}
+
+#franchiseSpan2{
+    grid-area:franchise;
+    justify-self: center;
+    font-weight: bolder;
+    font-size:3rem;
 }
 
 
