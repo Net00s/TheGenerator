@@ -4228,6 +4228,16 @@ Tony Rickardson (Famous People)
 Joe Biden (Famous People)
 Barrack Obama (Famous People)
 Michelle Obama (Famous People)
+Lebron James (Famous People)
+Stoffe (Famous People)
+Bob Ross (Famous People)
+Kobe Bryant (Famous People)
+Zlatan (Famous People)
+Tyler The Creator (Famous People)
+Will Smith (Famous People)
+Dwayne Johnson (Famous People)
+The Rizzler (Famous People)
+Me (Famous People)
 `
 
 // Franchises added: Skylanders, Blazblue, Granblue, DNF Duel, Guilty Gear, Mortal Kombat, Street Fighter, Under Night In-Birth, Pokemon Species, Dead By Daylight Original Killers, Star Wars, MArvel, Lorigins, Risk Of Rain, 
