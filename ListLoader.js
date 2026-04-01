@@ -4639,6 +4639,9 @@ The Queen (Cars)
 Popemobile (Cars)
 Otis (Cars)
 Finn McMissile (Cars)
+Rod Redline (Cars)
+Globie (Cars)
+()
 Dusty Crophopper (Planes)
 Skipper Riley (Planes)
 Ripslinger (Planes)
@@ -4650,8 +4653,6 @@ Leadbottom (Planes)
 Dottie (Planes)
 Chug (Planes)
 ()
-Rod Redline (Cars)
-Globie (Cars)
 `
 
 // Franchises added: Skylanders, Blazblue, Granblue, DNF Duel, Guilty Gear, Mortal Kombat, Street Fighter, Under Night In-Birth, Pokemon Species, Dead By Daylight Original Killers, Star Wars, MArvel, Lorigins, Risk Of Rain, 
