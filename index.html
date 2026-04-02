@@ -31,7 +31,8 @@
                 <p id="Franchise">From: <span id="franchiseSpan">Franchise</span></p>
             </div>
             <div class="Image" id="imageContainer">
-                <img id="Image" src="Images/NoNameFound.png" alt="Placeholder">                </div>
+                <img id="Image" src="Images/NoNameFound.png" alt="Placeholder">                
+            </div>
             <div class="center">
                 <button onclick="Load()">Randomize</button>
             </div>
@@ -90,10 +91,10 @@
 
                 imageP.style.visibility = "hidden";
 
-                imageP.src = `Images/${chosenCharacter[0]}.png`
+                imageP.src = `Images/${chosenCharacter[1]}/${chosenCharacter[0]}.png`
 
                 imageP.onerror = function(){
-                    imageP.src = "Images/NoNameFound.png"
+                    imageP.src = `Images/NoNameFound.png`
                 }
 
                 imageP.style.visibility = "visible";
@@ -111,7 +112,7 @@
 
 
 
-                imageP2.src = `Images/${chosenCharacter2[0]}.png`
+                imageP2.src = `Images/${chosenCharacter2[1]}/${chosenCharacter2[0]}.png`
 
                 imageP2.onerror = function(){
                     imageP2.src = "Images/NoNameFound.png"
