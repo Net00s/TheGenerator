@@ -4701,6 +4701,10 @@ Eso (Jujutsu Kaisen)
 Kechizu (Jujutsu Kaisen)
 Wasuke Itadori (Jujutsu Kaisen)
 ()
+Terry The Turd (GoopUp)
+Nis (GoopUp)
+Dead Gramps (GoopUp)
+()
 `
 
-// Franchises added: Skylanders, Blazblue, Granblue, DNF Duel, Guilty Gear, Mortal Kombat, Street Fighter, Under Night In-Birth, Pokemon Species, Dead By Daylight Original Killers, Star Wars, MArvel, Lorigins, Risk Of Rain, Deadlock, Team Fortress 2, Overwatch, Hermitcraft, Arknights, How To Train Your Dragon, Five Nights At Freddys, Famous People, Carrion, DOOM, SANDA, My Hero Academia, Cars, Planes, Jujutsu Kaisen, 
+// Franchises added: Skylanders, Blazblue, Granblue, DNF Duel, Guilty Gear, Mortal Kombat, Street Fighter, Under Night In-Birth, Pokemon Species, Dead By Daylight Original Killers, Star Wars, MArvel, Lorigins, Risk Of Rain, Deadlock, Team Fortress 2, Overwatch, Hermitcraft, Arknights, How To Train Your Dragon, Five Nights At Freddys, Famous People, Carrion, DOOM, SANDA, My Hero Academia, Cars, Planes, Jujutsu Kaisen, GoopUp, 
