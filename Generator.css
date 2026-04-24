@@ -129,3 +129,11 @@ img{
 p{
     text-align: left;
 }
+
+small{
+    bottom:0; position:fixed; color:white;
+}
+
+small a{
+    color: aqua;
+}
