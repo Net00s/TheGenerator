@@ -60,15 +60,15 @@
         <script>
             var usableList = nameList.split(")");
 
-            let nameP = document.getElementById("Name");
-            let franchiseP = document.getElementById("Franchise")
-            let spanP = document.getElementById("franchiseSpan")
-            let imageP = document.getElementById("Image")
+            let topName = document.getElementById("Name");
+            let topFranchise = document.getElementById("Franchise")
+            let topSpan = document.getElementById("franchiseSpan")
+            let topImage = document.getElementById("Image")
 
-            let nameP2 = document.getElementById("Name2");
-            let franchiseP2 = document.getElementById("Franchise2")
-            let spanP2 = document.getElementById("franchiseSpan2")
-            let imageP2 = document.getElementById("Image2")
+            let bottomName = document.getElementById("Name2");
+            let bottomFranchise = document.getElementById("Franchise2")
+            let bottomSpan = document.getElementById("franchiseSpan2")
+            let bottomImage = document.getElementById("Image2")
 
 
             for (let i=0;i<usableList.length;i++){
@@ -86,52 +86,52 @@
 
                 console.log(chosenCharacter)
 
-                nameP.innerHTML = chosenCharacter[0];
-                spanP.innerHTML = chosenCharacter[1];
+                topName.innerHTML = chosenCharacter[0];
+                topSpan.innerHTML = chosenCharacter[1];
 
 
-                imageP.style.visibility = "hidden";
+                topImage.style.visibility = "hidden";
 
-                imageP.src = `Images/${chosenCharacter[1]}/${chosenCharacter[0]}.png`
+                topImage.src = `Images/${chosenCharacter[1]}/${chosenCharacter[0]}.png`
 
-                imageP.onerror = function(){
-                    imageP.src = `Images/NoNameFound.png`
+                topImage.onerror = function(){
+                    topImage.src = `Images/NoNameFound.png`
                 }
 
-                imageP.style.visibility = "visible";
-                imageP.alt = chosenCharacter[0];
+                topImage.style.visibility = "visible";
+                topImage.alt = chosenCharacter[0];
 
                 //part 2
 
-                chosenCharacter2 = usableList[Math.floor(Math.random()*usableList.length)].split(" (");
-                chosenCharacter2[0] = chosenCharacter2[0].split("\n")[1]
+                secondChosenCharacter = usableList[Math.floor(Math.random()*usableList.length)].split(" (");
+                secondChosenCharacter[0] = secondChosenCharacter[0].split("\n")[1]
 
-                console.log(chosenCharacter2)
+                console.log(secondChosenCharacter)
 
-                nameP2.innerHTML = chosenCharacter2[0];             
-                spanP2.innerHTML = chosenCharacter2[1];
+                bottomName.innerHTML = secondChosenCharacter[0];             
+                bottomSpan.innerHTML = secondChosenCharacter[1];
 
 
 
-                imageP2.src = `Images/${chosenCharacter2[1]}/${chosenCharacter2[0]}.png`
+                bottomImage.src = `Images/${secondChosenCharacter[1]}/${secondChosenCharacter[0]}.png`
 
-                imageP2.onerror = function(){
-                    imageP2.src = "Images/NoNameFound.png"
+                bottomImage.onerror = function(){
+                    bottomImage.src = "Images/NoNameFound.png"
                 }
 
-                imageP2.alt = chosenCharacter[0];
+                bottomImage.alt = secondChosenCharacter[0];
 
                 //hide or show
 
                 if (document.getElementById("Slider").value == 1){
                     document.getElementById("second").style.display = "none";
-                    imageP2.style.display = "none"
+                    bottomImage.style.display = "none"
                     document.getElementById("imageContainer2").style.display="none"
 
                 }
                 else{
                     document.getElementById("second").style.display = "block";
-                    imageP2.style.display = "block"
+                    bottomImage.style.display = "block"
                     document.getElementById("imageContainer2").style.display="block"
                 }
 
